@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CALICO - Seoul Streetwear &amp; Fashion</title>
+<meta name="description" content="CALICO Streetwear - Expressive gear inspired by Seoul culture. Shop new drops, apparel, and accessories with worldwide shipping."/>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%23ea2a33'>C</text></svg>"/>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" as="style"/>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" as="style"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ea2a33",
+                        "background-light": "#ffffff",
+                        "background-dark": "#211111",
+                        "text-main": "#181111",
+                        "text-muted": "#886364",
+                        "surface": "#f4f0f0"
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem", 
+                        "lg": "0.5rem", 
+                        "xl": "0.75rem", 
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar for clean look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d1d1d1; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #b1b1b1; 
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-main antialiased overflow-x-hidden">
+<div class="relative flex flex-col min-h-screen">
+<!-- Top Navigation -->
+        <script src="app.js"></script>
+<div class="px-6 md:px-10 py-4 flex items-center justify-between">
+<!-- Logo Area -->
+<div class="flex items-center gap-3">
+<div class="text-primary">
+<span class="material-symbols-outlined logo-icon" data-icon-light="emergency_home" data-icon-dark="emergency_home">emergency_home</span>
+</div>
+<a class="text-2xl font-bold tracking-tight text-text-main dark:text-white group hover:text-primary transition-colors" href="#">
+                        CALICO
+                    </a>
+</div>
+<!-- Desktop Nav -->
+<nav id="mainNav" class="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
+<a class="text-sm font-bold uppercase text-text-main dark:text-white hover:text-primary transition-colors" href="Index.html">Home</a>
+<a class="text-sm font-bold uppercase text-text-main dark:text-white hover:text-primary transition-colors" href="Shop.html">Shop</a>
+<a class="text-sm font-bold uppercase text-text-main dark:text-white hover:text-primary transition-colors" href="About.html">About Us</a>
+</nav>
+<!-- Icons -->
+<div class="flex items-center gap-3">
+<button aria-label="Search" class="flex items-center justify-center w-10 h-10 rounded-lg hover:bg-surface transition-colors">
+<span class="material-symbols-outlined" data-icon-light="search" data-icon-dark="search">search</span>
+</button>
+<button id="themeToggle" aria-label="Toggle dark mode" class="flex items-center justify-center w-10 h-10 rounded-lg hover:bg-surface transition-colors">
+<span class="material-symbols-outlined" data-icon-light="dark_mode" data-icon-dark="light_mode">dark_mode</span>
+</button>
+<a href="Login.html" aria-label="Account" class="flex items-center justify-center w-10 h-10 rounded-lg hover:bg-surface transition-colors">
+<span class="material-symbols-outlined" data-icon-light="person" data-icon-dark="person_outline">person</span>
+</a>
+<a href="Cart.html" aria-label="Shopping Cart" class="relative flex items-center justify-center w-10 h-10 rounded-lg hover:bg-surface transition-colors group">
+<span class="material-symbols-outlined" data-icon-light="shopping_bag" data-icon-dark="shopping_bag">shopping_bag</span>
+<span class="cart-badge absolute top-2 right-2 w-2 h-2 bg-primary rounded-full hidden"></span>
+</a>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-[1440px] mx-auto px-4 sm:px-6 md:px-10 py-6">
+<!-- Breadcrumbs -->
+<div class="flex items-center gap-2 text-sm text-text-muted dark:text-gray-400 mb-8">
+<a class="hover:text-primary transition-colors" href="Index.html">Home</a>
+<span class="material-symbols-outlined !text-[14px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="Shop.html">Shop</a>
+<span class="material-symbols-outlined !text-[14px]">chevron_right</span>
+<span class="text-text-main dark:text-white font-medium">All Products</span>
+</div>
+<!-- Page Heading -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 border-b border-surface pb-8">
+<div class="flex flex-col gap-2">
+<h1 class="text-4xl md:text-6xl font-bold tracking-tighter uppercase leading-none text-text-main dark:text-white">Shop All</h1>
+<p class="text-text-muted dark:text-gray-400 text-sm md:text-base font-medium tracking-wide">SEOUL TO THE WORLD / FREE SHIPPING OVER $150</p>
+</div>
+</div>
+<!-- Filters & Sort Toolbar -->
+<div class="static bg-background-light dark:bg-background-dark py-4 mb-8 flex flex-col lg:flex-row gap-4 justify-between items-start lg:items-center border-b border-surface dark:border-gray-700">
+  
+  <!-- Filter Buttons Container -->
+  <div class="flex flex-wrap gap-2 w-full lg:w-auto">
+    
+    <!-- Category Filter -->
+    <div class="relative group">
+      <button class="flex h-9 items-center gap-2 rounded-lg border border-surface bg-white dark:bg-surface dark:text-white px-4 hover:border-primary/30 transition-colors" aria-label="Filter by category" aria-expanded="false">
+        <span class="text-sm font-bold">Category</span>
+        <span class="material-symbols-outlined !text-[18px] group-hover:text-primary transition-transform duration-300">keyboard_arrow_down</span>
+      </button>
+      <div class="absolute top-full left-0 mt-2 hidden group-hover:flex flex-col gap-2 bg-white dark:bg-surface border border-surface rounded-lg p-3 shadow-lg z-50 min-w-[200px]" role="menu">
+        <button class="text-left px-3 py-2 text-sm hover:bg-surface dark:hover:bg-gray-700 rounded transition-colors" data-filter-type="category" data-filter-value="Clothing">Clothing</button>
+        <button class="text-left px-3 py-2 text-sm hover:bg-surface dark:hover:bg-gray-700 rounded transition-colors" data-filter-type="category" data-filter-value="Footwear">Footwear</button>
+        <button class="text-left px-3 py-2 text-sm hover:bg-surface dark:hover:bg-gray-700 rounded transition-colors" data-filter-type="category" data-filter-value="Accessories">Accessories</button>
+      </div>
+    </div>
+
+    <!-- Size Filter -->
+    <div class="relative group">
+      <button class="flex h-9 items-center gap-2 rounded-lg border border-surface bg-white dark:bg-surface dark:text-white px-4 hover:border-primary/30 transition-colors" aria-label="Filter by size" aria-expanded="false">
+        <span class="text-sm font-bold">Size</span>
+        <span class="material-symbols-outlined !text-[18px] group-hover:text-primary transition-transform duration-300">keyboard_arrow_down</span>
+      </button>
+      <div class="absolute top-full left-0 mt-2 hidden group-hover:flex flex-col gap-2 bg-white dark:bg-surface border border-surface rounded-lg p-3 shadow-lg z-50 min-w-[200px]" role="menu">
+        <button class="text-left px-3 py-2 text-sm hover:bg-surface dark:hover:bg-gray-700 rounded transition-colors" data-filter-type="size" data-filter-value="S">S (Small)</button>
+        <button class="text-left px-3 py-2 text-sm hover:bg-surface dark:hover:bg-gray-700 rounded transition-colors" data-filter-type="size" data-filter-value="M">M (Medium)</button>
+        <button class="text-left px-3 py-2 text-sm hover:bg-surface dark:hover:bg-gray-700 rounded transition-colors" data-filter-type="size" data-filter-value="L">L (Large)</button>
+        <button class="text-left px-3 py-2 text-sm hover:bg-surface dark:hover:bg-gray-700 rounded transition-colors" data-filter-type="size" data-filter-value="XL">XL (Extra Large)</button>
+      </div>
+    </div>
+
+    <!-- Color Filter -->
+    <div class="relative group">
+      <button class="flex h-9 items-center gap-2 rounded-lg border border-surface bg-white dark:bg-surface dark:text-white px-4 hover:border-primary/30 transition-colors" aria-label="Filter by color" aria-expanded="false">
+        <span class="text-sm font-bold">Color</span>
+        <span class="material-symbols-outlined !text-[18px] group-hover:text-primary transition-transform duration-300">keyboard_arrow_down</span>
+      </button>
+      <div class="absolute top-full left-0 mt-2 hidden group-hover:flex flex-col gap-2 bg-white dark:bg-surface border border-surface rounded-lg p-3 shadow-lg z-50 min-w-[200px]" role="menu">
+        <button class="text-left px-3 py-2 text-sm hover:bg-surface dark:hover:bg-gray-700 rounded transition-colors" data-filter-type="color" data-filter-value="Black">Black</button>
+        <button class="text-left px-3 py-2 text-sm hover:bg-surface dark:hover:bg-gray-700 rounded transition-colors" data-filter-type="color" data-filter-value="White">White</button>
+        <button class="text-left px-3 py-2 text-sm hover:bg-surface dark:hover:bg-gray-700 rounded transition-colors" data-filter-type="color" data-filter-value="Grey">Grey</button>
+        <button class="text-left px-3 py-2 text-sm hover:bg-surface dark:hover:bg-gray-700 rounded transition-colors" data-filter-type="color" data-filter-value="Olive">Olive</button>
+      </div>
+    </div>
+
+    <!-- Price Filter -->
+    <div class="relative group">
+      <button class="flex h-9 items-center gap-2 rounded-lg border border-surface bg-white dark:bg-surface dark:text-white px-4 hover:border-primary/30 transition-colors" aria-label="Filter by price" aria-expanded="false">
+        <span class="text-sm font-bold">Price</span>
+        <span class="material-symbols-outlined !text-[18px] group-hover:text-primary transition-transform duration-300">keyboard_arrow_down</span>
+      </button>
+      <div class="absolute top-full left-0 mt-2 hidden group-hover:flex flex-col gap-2 bg-white dark:bg-surface border border-surface rounded-lg p-3 shadow-lg z-50 min-w-[200px]" role="menu">
+        <button class="text-left px-3 py-2 text-sm hover:bg-surface dark:hover:bg-gray-700 rounded transition-colors" data-filter-type="price" data-filter-value="0-50">Under £50</button>
+        <button class="text-left px-3 py-2 text-sm hover:bg-surface dark:hover:bg-gray-700 rounded transition-colors" data-filter-type="price" data-filter-value="50-100">£50 - £100</button>
+        <button class="text-left px-3 py-2 text-sm hover:bg-surface dark:hover:bg-gray-700 rounded transition-colors" data-filter-type="price" data-filter-value="100-200">£100 - £200</button>
+        <button class="text-left px-3 py-2 text-sm hover:bg-surface dark:hover:bg-gray-700 rounded transition-colors" data-filter-type="price" data-filter-value="200+">Over £200</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Sort Dropdown -->
+  <div class="flex items-center gap-2 w-full lg:w-auto">
+    <span class="text-sm text-text-muted dark:text-gray-400 whitespace-nowrap">Sort by:</span>
+    <div class="relative w-full lg:w-48">
+      <select id="sortSelect" class="w-full appearance-none rounded-lg border border-surface bg-white dark:bg-surface dark:text-white py-2 pl-3 pr-8 text-sm font-bold focus:border-primary focus:outline-none focus:ring-0" aria-label="Sort products">
+        <option>Newest Arrivals</option>
+        <option>Price: Low to High</option>
+        <option>Price: High to Low</option>
+        <option>Best Sellers</option>
+      </select>
+      <span class="pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 material-symbols-outlined !text-[18px]">expand_more</span>
+    </div>
+  </div>
+
+</div>
+<!-- Product Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-10">
+<!-- Product Card 1 -->
+<div class="group flex flex-col gap-3 cursor-pointer" data-product-id="1" data-category="Clothing" data-size="M,L" data-color="Black" data-price="85">
+<div class="relative aspect-[4/5] w-full overflow-hidden rounded-lg bg-surface">
+<img loading="lazy" alt="Model wearing Seoul Ghost Hoodie in studio setting" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Model wearing Seoul Ghost Hoodie in studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXUq1W8h7QDJxKWGOdHD5SZWjA8DEo8-Yapg1I0Va6JXGGT0xX1yDm96uXKd_3XwboLxax6aJ7kLW0ECroJiLLt61N23Xsh-xvNjP1-UZodaKSQR_MUYwrzAVf4dNnt8pwAhCo5HxFm7Y9eaX8DQc4oZrg1ieb8yn8RgB9DmVA6Wrxn5t9SUIoD_6TPlKZLQ3v4grO0LBd8EfEizTw3rpNSeV0C_HbM7RsgUYDhRWtQItCS3QQI72rxudqfzOjFNOwWvDfbllTg6Ng"/>
+<div class="absolute top-3 left-3 bg-primary text-white text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded">New Drop</div>
+<button aria-label="Add Seoul Ghost Hoodie to cart" class="add-to-cart-btn absolute bottom-3 right-3 h-8 w-8 bg-white rounded-full flex items-center justify-center opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 shadow-sm hover:bg-primary hover:text-white">
+<span class="material-symbols-outlined !text-[18px]">add</span>
+</button>
+</div>
+<div>
+<div class="flex justify-between items-start">
+<h3 class="font-bold text-base text-text-main dark:text-white group-hover:text-primary transition-colors">Seoul Ghost Hoodie</h3>
+<p class="font-medium text-text-muted dark:text-gray-400">$85.00</p>
+</div>
+<div class="flex gap-1 mt-2">
+<div class="product-swatch w-3 h-3 rounded-full bg-black border border-surface" data-color="Black" title="Black"></div>
+<div class="product-swatch w-3 h-3 rounded-full bg-gray-400 border border-surface" data-color="Grey" title="Grey"></div>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group flex flex-col gap-3 cursor-pointer" data-product-id="2" data-category="Clothing" data-size="M" data-color="White" data-price="45">
+<div class="relative aspect-[4/5] w-full overflow-hidden rounded-lg bg-surface">
+<img loading="lazy" alt="Close up of District 9 Graphic Tee with abstract print" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Close up of District 9 Graphic Tee with abstract print" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiyyVR0GHFqnEHci-Nvj5XfegiXA9pf_mieBCK_W2P2glhZxMbxDHphG25Ty-LKQrKckZ9zGbcff-PrX-Sz4ztzCrjZm3P4MzSYRfv0DKlcef6CP8PA414twQVT7R6MuHW0WwJcShs87mVbR68h-lF8fKAYtviY6pPZYtxp4FnjBc176rEG779u0iFpT0stcPK1wPjc0LdBeJrUrFqxuqPT-Bq4qE0_JXm1Y05KYURdPGt3hWwKERTIjEVb31oKLeUwAZwI8koHrVW"/>
+<button aria-label="Add District 9 Graphic Tee to cart" class="add-to-cart-btn absolute bottom-3 right-3 h-8 w-8 bg-white rounded-full flex items-center justify-center opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 shadow-sm hover:bg-primary hover:text-white">
+<span class="material-symbols-outlined !text-[18px]">add</span>
+</button>
+</div>
+<div>
+<div class="flex justify-between items-start">
+<h3 class="font-bold text-base text-text-main dark:text-white group-hover:text-primary transition-colors">District 9 Graphic Tee</h3>
+<p class="font-medium text-text-muted dark:text-gray-400">$45.00</p>
+</div>
+<div class="flex gap-1 mt-2">
+<div class="product-swatch w-3 h-3 rounded-full bg-white border border-gray-300" data-color="White" title="White"></div>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group flex flex-col gap-3 cursor-pointer" data-product-id="3" data-category="Clothing" data-size="M,L" data-color="Black,Stone" data-price="110">
+<div class="relative aspect-[4/5] w-full overflow-hidden rounded-lg bg-surface">
+<img loading="lazy" alt="Full body shot of model in Cyber Cargo Pants" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Full body shot of model in Cyber Cargo Pants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNrGnw9EddgYCXdd0pSrFUhAQnvUmRKW-TEyrLUCQPANxlC8vIh_8AUvFcd9U0yFUCF7jY97MrFV_0qSoBXaMpx3j7naqk7oTAZklUlupQ0hQ25jEmrmx1bitgIEbB78DXTBBub6-cOw0caEl2ZQ3fI95fl2dj1L8YfPZdP71fT9Qp5iE5eT2alZtm86k2nfnOQNfpuUaMlv25S8q_2ScgNdmf_rwSGn9UyiQj5bQ_dMwIg9QiGD7ibwoXN4TofJTsK5XT0y0S-7s8"/>
+<div class="absolute top-3 left-3 bg-black text-white text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded">Low Stock</div>
+<button aria-label="Add Cyber Cargo Pants to cart" class="add-to-cart-btn absolute bottom-3 right-3 h-8 w-8 bg-white rounded-full flex items-center justify-center opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 shadow-sm hover:bg-primary hover:text-white">
+<span class="material-symbols-outlined !text-[18px]">add</span>
+</button>
+</div>
+<div>
+<div class="flex justify-between items-start">
+<h3 class="font-bold text-base text-text-main dark:text-white group-hover:text-primary transition-colors">Cyber Cargo Pants</h3>
+<p class="font-medium text-text-muted dark:text-gray-400">$110.00</p>
+</div>
+<div class="flex gap-1 mt-2">
+<div class="product-swatch w-3 h-3 rounded-full bg-stone-800 border border-surface" data-color="Black" title="Black"></div>
+<div class="product-swatch w-3 h-3 rounded-full bg-stone-600 border border-surface" data-color="Stone" title="Stone"></div>
+</div>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group flex flex-col gap-3 cursor-pointer" data-product-id="4" data-category="Clothing" data-size="M,L" data-color="Lime" data-price="55">
+<div class="relative aspect-[4/5] w-full overflow-hidden rounded-lg bg-surface">
+<img loading="lazy" alt="Oversized Neon shirt on hanger against concrete wall" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Oversized Neon shirt on hanger against concrete wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWGo1Mjx_vNjiPBu9o4823AN0Z2QDMiNjwo8x8AeZEelBfgmn5GgVZYTWCeJoWWj5N1XpiwroBBGoioaldNCstG2GywSK3zzRDXNNa6zEDPZxRLcGPcYDJOqaXsya2EKDZQRLN6fTKttobVJkr_Kph_tVOAfAHNhAr81sp-9g2cVmEAmwSjVrCmf0ia-mPFQtyHUsXcWJvO4rIis2KUTCZ0GtSOFei3COhTKbnbPrUe3wsAeglPBMwj1p2uymUbE21qnfrClVgUl1E"/>
+<button aria-label="Add Neon Glitch Shirt to cart" class="add-to-cart-btn absolute bottom-3 right-3 h-8 w-8 bg-white rounded-full flex items-center justify-center opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 shadow-sm hover:bg-primary hover:text-white">
+<span class="material-symbols-outlined !text-[18px]">add</span>
+</button>
+</div>
+<div>
+<div class="flex justify-between items-start">
+<h3 class="font-bold text-base text-text-main dark:text-white group-hover:text-primary transition-colors">Neon Glitch Shirt</h3>
+<p class="font-medium text-text-muted dark:text-gray-400">$55.00</p>
+</div>
+<div class="flex gap-1 mt-2">
+<div class="product-swatch w-3 h-3 rounded-full bg-lime-400 border border-surface" data-color="Lime" title="Lime"></div>
+</div>
+</div>
+</div>
+<!-- Product Card 5 -->
+<div class="group flex flex-col gap-3 cursor-pointer" data-product-id="5" data-category="Footwear" data-size="M" data-color="White,Black" data-price="145">
+<div class="relative aspect-[4/5] w-full overflow-hidden rounded-lg bg-surface">
+<img loading="lazy" alt="Generic streetwear sneakers on concrete floor" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Generic streetwear sneakers on concrete floor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEflnHcRv4G8Tl_1QSW-4TAHI2Jdpf0_1MPZ4_Zd5lZ8UZ2towZ2HzWFJZOJUv4ych0jLqMuqmVtHBeMfk_F-B10ZjrZ3y3Po1WawFLRz9kCc-bgbDhKFo0lb-mVBVzgYOSIg1t_6diop0qc8GSFoCtCKH8jTK-Qq29Pc8cNPGjYq58U17EJjCGxerkjOvVkiEVCiEdUwZje8CvLTCoDKPdA4FuO0onwxygeRHBzCEok4YTTK87AjczTxCma6F8LAUC7m3edbPaaj6"/>
+<button aria-label="Add Orbit Chunky Sneaker to cart" class="add-to-cart-btn absolute bottom-3 right-3 h-8 w-8 bg-white rounded-full flex items-center justify-center opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 shadow-sm hover:bg-primary hover:text-white">
+<span class="material-symbols-outlined !text-[18px]">add</span>
+</button>
+</div>
+<div>
+<div class="flex justify-between items-start">
+<h3 class="font-bold text-base text-text-main dark:text-white group-hover:text-primary transition-colors">Orbit Chunky Sneaker</h3>
+<p class="font-medium text-text-muted dark:text-gray-400">$145.00</p>
+</div>
+<div class="flex gap-1 mt-2">
+<div class="product-swatch w-3 h-3 rounded-full bg-white border border-gray-300" data-color="White" title="White"></div>
+<div class="product-swatch w-3 h-3 rounded-full bg-black border border-surface" data-color="Black" title="Black"></div>
+</div>
+</div>
+</div>
+<!-- Product Card 6 -->
+<div class="group flex flex-col gap-3 cursor-pointer" data-product-id="6" data-category="Accessories" data-size="" data-color="Navy,Black,Orange" data-price="35">
+<div class="relative aspect-[4/5] w-full overflow-hidden rounded-lg bg-surface">
+<img loading="lazy" alt="Model wearing red beanie in street setting" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Model wearing red beanie in street setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXVhCCmecC3_xWOYoarKB24iaOV8fBpjrFYY5pBKiMX8tsKOLqD_GUm_YSrQSyo1_FkGBuZ7ddtpYNT1vpFrk63JBS5qtAOxpRhDNnz2gzk3RIWe2qs9WaKyYxBH-Nrv3b60bkJfzP5Z3ETcDlOQstnrfM9qoMRMf_qTLf-v4gtv94vs0LuoG3gRIJ-3bn_asUFt8ztfVXZfUxMCxof0qH72mi8x7JgmuCjAQNV2Y4LCxpbnp20wg85tCessbP2foDJv5ZmpzaAJ7m"/>
+<button aria-label="Add Dock Worker Beanie to cart" class="add-to-cart-btn absolute bottom-3 right-3 h-8 w-8 bg-white rounded-full flex items-center justify-center opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 shadow-sm hover:bg-primary hover:text-white">
+<span class="material-symbols-outlined !text-[18px]">add</span>
+</button>
+</div>
+<div>
+<div class="flex justify-between items-start">
+<h3 class="font-bold text-base text-text-main dark:text-white group-hover:text-primary transition-colors">Dock Worker Beanie</h3>
+<p class="font-medium text-text-muted dark:text-gray-400">$35.00</p>
+</div>
+<div class="flex gap-1 mt-2">
+<div class="product-swatch w-3 h-3 rounded-full bg-primary border border-surface" data-color="Navy" title="Navy"></div>
+<div class="product-swatch w-3 h-3 rounded-full bg-black border border-surface" data-color="Black" title="Black"></div>
+<div class="product-swatch w-3 h-3 rounded-full bg-orange-400 border border-surface" data-color="Orange" title="Orange"></div>
+</div>
+</div>
+</div>
+<!-- Product Card 7 -->
+<div class="group flex flex-col gap-3 cursor-pointer" data-product-id="7" data-category="Clothing" data-size="M,L" data-color="" data-price="180">
+<div class="relative aspect-[4/5] w-full overflow-hidden rounded-lg bg-surface">
+<img loading="lazy" alt="Vintage style bomber jacket hanging" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Vintage style bomber jacket hanging" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEF0NzIrGfwE4u55EaeE1gj6C78YBTyb2PEu6esqfoTFRrzEyHqZvdGvV8fCTQO-cM1DrWPtzeN3ETh3a6Hk5t736TlQhFVO7YQrv_MCFi3iepbabqWchlriqKQkTq4dLGs4RM3KQRywgT-iS7xbs-LMQ7Vw1zzjEfV98RmESY4ea50ZGrhKKgd5Q5dbmNS_Ny6z_kFvEZ_pB0sozb4Kudu89AgAJFnSpm9sDTJrD22kyCRWFexFYkummv98PbNR_vWrdB38P-SP-s"/>
+<button aria-label="Add Seoul City Bomber to cart" class="absolute bottom-3 right-3 h-8 w-8 bg-white rounded-full flex items-center justify-center opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 shadow-sm hover:bg-primary hover:text-white">
+<span class="material-symbols-outlined !text-[18px]">add</span>
+</button>
+</div>
+<div>
+<div class="flex justify-between items-start">
+<h3 class="font-bold text-base text-text-main dark:text-white group-hover:text-primary transition-colors">Seoul City Bomber</h3>
+<p class="font-medium text-text-muted dark:text-gray-400">$180.00</p>
+</div>
+<div class="flex gap-1 mt-2">
+<div class="w-3 h-3 rounded-full bg-green-900 border border-surface"></div>
+</div>
+</div>
+</div>
+<!-- Product Card 8 -->
+<div class="group flex flex-col gap-3 cursor-pointer" data-product-id="8" data-category="Accessories" data-size="" data-color="" data-price="60">
+<div class="relative aspect-[4/5] w-full overflow-hidden rounded-lg bg-surface">
+<img loading="lazy" alt="Minimalist silver chain necklace on model" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Minimalist silver chain necklace on model" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrDA66x0Il0OJH9w8TiCfI161C2YG8JuOgIDTavu9Lbri-31hSmh9eQlX5SZYrwnWJodfNXb-dgIFh13GQ0JFdIJZ2D6ACRdSDvBONlH7IqLqAoo59mGVG-VTp-mbP1SZqX49fEqUAWuFhZ6_3CIA-shnLwShKQCdYDfVlYFasDCeuhFcvtHL3_sOJWO0x1rVVu_OgChKvi6_a3Cis8SaC8EF3Cc8OCJGMWlaA7mlLr3ISN8fYx8I_zY3JG_q3Gr5NFFYAAmzlO0y4"/>
+<div class="absolute top-3 left-3 bg-surface text-text-muted text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded">Sold Out</div>
+<button class="absolute bottom-3 right-3 h-8 w-8 bg-white/50 rounded-full flex items-center justify-center opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 cursor-not-allowed" disabled="">
+<span class="material-symbols-outlined !text-[18px]">block</span>
+</button>
+</div>
+<div>
+<div class="flex justify-between items-start">
+<h3 class="font-bold text-base text-text-main dark:text-white group-hover:text-primary transition-colors">Industrial Chain</h3>
+<p class="font-medium text-text-muted dark:text-gray-400">$60.00</p>
+</div>
+<div class="flex gap-1 mt-2">
+<div class="w-3 h-3 rounded-full bg-gray-300 border border-surface"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination / Load More -->
+<div class="mt-20 flex justify-center">
+<button class="bg-text-main dark:bg-gray-200 text-white dark:text-text-main hover:bg-primary dark:hover:bg-gray-300 px-10 py-4 rounded-lg font-bold uppercase tracking-widest text-sm transition-all duration-300 active:scale-95">
+                    Load More Products
+                </button>
+</div>
+</main>
+<!-- Newsletter Section -->
+<section class="bg-text-main text-white py-20 px-6">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+<div class="max-w-xl">
+<h2 class="text-3xl md:text-5xl font-bold uppercase mb-4 leading-tight text-white">Join the<br/><span class="text-primary">CALICO</span> Club</h2>
+<p class="text-gray-300 font-medium">Get early access to new drops, exclusive Seoul edits, and 10% off your first order.</p>
+</div>
+<div class="w-full max-w-md">
+<form class="flex gap-2">
+<input class="flex-1 bg-white/10 border-0 rounded-lg px-6 py-4 text-white placeholder:text-gray-500 focus:ring-2 focus:ring-primary font-bold text-sm" placeholder="ENTER YOUR EMAIL" type="email"/>
+<button class="bg-primary hover:bg-red-600 text-white px-8 py-4 rounded-lg font-bold uppercase text-sm tracking-wide transition-colors" type="button">
+                            Join
+                        </button>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-white dark:bg-text-main border-t border-surface dark:border-gray-700 py-12 px-6">
+<div class="max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+<div class="flex flex-col gap-1">
+<span class="text-2xl font-bold tracking-tight text-text-main dark:text-white">CALICO</span>
+<span class="text-xs text-text-muted dark:text-gray-400 uppercase">Seoul-inspired, with occasional drops in other styles. / Global Shipping</span>
+</div>
+<div class="flex flex-wrap gap-8 text-sm font-medium text-text-main dark:text-white">
+<a aria-label="Instagram" class="hover:text-primary transition-colors" href="#">Instagram</a>
+<a aria-label="TikTok" class="hover:text-primary transition-colors" href="#">TikTok</a>
+<a aria-label="Shipping" class="hover:text-primary transition-colors" href="#">Shipping</a>
+<a aria-label="Returns" class="hover:text-primary transition-colors" href="#">Returns</a>
+<a aria-label="Contact" class="hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500 px-4 md:px-10">
+<p>© 2024 CALICO. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-white transition-colors" href="privacypolicy.html">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="termsofservice.html">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+
+<script src="app.js"></script>
+<script>
+    // Add to Cart Functionality for Product Listing
+    const products = [
+        { id: 1, name: 'Seoul Ghost Hoodie', price: '$85.00', image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDXUq1W8h7QDJxKWGOdHD5SZWjA8DEo8-Yapg1I0Va6JXGGT0xX1yDm96uXKd_3XwboLxax6aJ7kLW0ECroJiLLt61N23Xsh-xvNjP1-UZodaKSQR_MUYwrzAVf4dNnt8pwAhCo5HxFm7Y9eaX8DQc4oZrg1ieb8yn8RgB9DmVA6Wrxn5t9SUIoD_6TPlKZLQ3v4grO0LBd8EfEizTw3rpNSeV0C_HbM7RsgUYDhRWtQItCS3QQI72rxudqfzOjFNOwWvDfbllTg6Ng', colors: ['Charcoal','Grey','Ivory'] },
+        { id: 2, name: 'District 9 Graphic Tee', price: '$45.00', image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDiyyVR0GHFqnEHci-Nvj5XfegiXA9pf_mieBCK_W2P2glhZxMbxDHphG25Ty-LKQrKckZ9zGbcff-PrX-Sz4ztzCrjZm3P4MzSYRfv0DKlcef6CP8PA414twQVT7R6MuHW0WwJcShs87mVbR68h-lF8fKAYtviY6pPZYtxp4FnjBc176rEG779u0iFpT0stcPK1wPjc0LdBeJrUrFqxuqPT-Bq4qE0_JXm1Y05KYURdPGt3hWwKERTIjEVb31oKLeUwAZwI8koHrVW', colors: ['White'] },
+        { id: 3, name: 'Cyber Cargo Pants', price: '$110.00', image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBNrGnw9EddgYCXdd0pSrFUhAQnvUmRKW-TEyrLUCQPANxlC8vIh_8AUvFcd9U0yFUCF7jY97MrFV_0qSoBXaMpx3j7naqk7oTAZklUlupQ0hQ25jEmrmx1bitgIEbB78DXTBBub6-cOw0caEl2ZQ3fI95fl2dj1L8YfPZdP71fT9Qp5iE5eT2alZtm86k2nfnOQNfpuUaMlv25S8q_2ScgNdmf_rwSGn9UyiQj5bQ_dMwIg9QiGD7ibwoXN4TofJTsK5XT0y0S-7s8', colors: ['Black','Deep Olive'] },
+        { id: 4, name: 'Neon Glitch Shirt', price: '$55.00', image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBWGo1Mjx_vNjiPBu9o4823AN0Z2QDMiNjwo8x8AeZEelBfgmn5GgVZYTWCeJoWWj5N1XpiwroBBGoioaldNCstG2GywSK3zzRDXNNa6zEDPZxRLcGPcYDJOqaXsya2EKDZQRLN6fTKttobVJkr_Kph_tVOAfAHNhAr81sp-9g2cVmEAmwSjVrCmf0ia-mPFQtyHUsXcWJvO4rIis2KUTCZ0GtSOFei3COhTKbnbPrUe3wsAeglPBMwj1p2uymUbE21qnfrClVgUl1E', colors: ['Lime','Black'] },
+        { id: 5, name: 'Orbit Chunky Sneaker', price: '$145.00', image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCEflnHcRv4G8Tl_1QSW-4TAHI2Jdpf0_1MPZ4_Zd5lZ8UZ2towZ2HzWFJZOJUv4ych0jLqMuqmVtHBeMfk_F-B10ZjrZ3y3Po1WawFLRz9kCc-bgbDhKFo0lb-mVBVzgYOSIg1t_6diop0qc8GSFoCtCKH8jTK-Qq29Pc8cNPGjYq58U17EJjCGxerkjOvVkiEVCiEdUwZje8CvLTCoDKPdA4FuO0onwxygeRHBzCEok4YTTK87AjczTxCma6F8LAUC7m3edbPaaj6', colors: ['White','Black'] },
+        { id: 6, name: 'Dock Worker Beanie', price: '$35.00', image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBXVhCCmecC3_xWOYoarKB24iaOV8fBpjrFYY5pBKiMX8tsKOLqD_GUm_YSrQSyo1_FkGBuZ7ddtpYNT1vpFrk63JBS5qtAOxpRhDNnz2gzk3RIWe2qs9WaKyYxBH-Nrv3b60bkJfzP5Z3ETcDlOQstnrfM9qoMRMf_qTLf-v4gtv94vs0LuoG3gRIJ-3bn_asUFt8ztfVXZfUxMCxof0qH72mi8x7JgmuCjAQNV2Y4LCxpbnp20wg85tCessbP2foDJv5ZmpzaAJ7m', colors: ['Navy','Black','Orange'] }
+    ];
+
+    // Swatch selection: mark selected color on product card
+    document.querySelectorAll('.product-swatch').forEach(swatch => {
+        swatch.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const card = swatch.closest('.group');
+            if (!card) return;
+            card.querySelectorAll('.product-swatch').forEach(s => s.classList.remove('ring-2','ring-primary'));
+            swatch.classList.add('ring-2','ring-primary');
+            card.dataset.selectedColor = swatch.dataset.color;
+        });
+    });
+
+    document.querySelectorAll('.add-to-cart-btn').forEach((button, index) => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            const product = products[index];
+            const card = button.closest('.group');
+            const selectedColor = (card && card.dataset.selectedColor) ? card.dataset.selectedColor : (product.colors ? product.colors[0] : null);
+            if (product) {
+                const payload = Object.assign({}, product, { selectedColor });
+                cart.addItem(payload);
+                button.textContent = '✓ Added!';
+                button.style.backgroundColor = '#10b981';
+                setTimeout(() => {
+                    button.innerHTML = '<span class="material-symbols-outlined !text-[18px]">add</span>';
+                    button.style.backgroundColor = '';
+                }, 2000);
+            }
+        });
+    });
+</script>
+<script>
+(function(){
+  // Safe mobile menu binding
+  const menuToggle = document.getElementById('menuToggle');
+  const mainNav = document.getElementById('mainNav');
+  if (menuToggle && mainNav && !menuToggle.dataset.bound) {
+    menuToggle.addEventListener('click', () => mainNav.classList.toggle('hidden'));
+    menuToggle.dataset.bound = '1';
+  }
+
+  // Theme toggle (persisted)
+  const themeToggle = document.getElementById('themeToggle');
+  const root = document.documentElement;
+  function updateBannerIcons(isDark) {
+  document.querySelectorAll('[data-icon-light]').forEach(el => {
+    const light = el.getAttribute('data-icon-light');
+    const dark = el.getAttribute('data-icon-dark');
+    if (isDark && dark) el.textContent = dark;
+    else if (!isDark && light) el.textContent = light;
+  });
+}
+
+  function applyTheme(dark){
+    if(dark) root.classList.add('dark'); else root.classList.remove('dark');
+    localStorage.setItem('calicoTheme', dark ? 'dark' : 'light');
+    updateBannerIcons(dark);
+  }
+  const stored = localStorage.getItem('calicoTheme');
+  if(stored) applyTheme(stored === 'dark');
+  if(themeToggle && !themeToggle.dataset.bound){
+    themeToggle.addEventListener('click', ()=>{
+      const isDark = root.classList.toggle('dark');
+      localStorage.setItem('calicoTheme', isDark ? 'dark' : 'light');
+      updateBannerIcons(isDark);
+    });
+    themeToggle.dataset.bound = '1';
+  }
+
+  // Newsletter validation for footer forms
+  document.querySelectorAll('footer form').forEach(form=>{
+    const email = form.querySelector('input[type="email"]');
+    const btn = form.querySelector('button[type="button"], button[type="submit"]');
+    if(!email || !btn) return;
+    if(btn.dataset.bound) return;
+    btn.addEventListener('click', async (e)=>{
+      e.preventDefault();
+      const val = (email.value||'').trim();
+      const re = /^\S+@\S+\.\S+$/;
+      if(!re.test(val)){ alert('Please enter a valid email'); email.focus(); return; }
+      // Try to POST to /subscribe (stub) — safe fallback if network fails
+      try{
+        await fetch('/subscribe', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({email: val})});
+        alert('Subscribed — thank you!');
+        email.value = '';
+      }catch(_){
+        alert('Subscribed (local) — no backend connected.');
+        email.value = '';
+      }
+    });
+    btn.dataset.bound = '1';
+  });
+})();
+</script>
+<script>
+(function(){
+  // Filter functionality
+  const filterButtons = document.querySelectorAll('[data-filter-type]');
+  const activeFilters = {
+    category: [],
+    size: [],
+    color: [],
+    price: []
+  };
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const type = btn.getAttribute('data-filter-type');
+      const value = btn.getAttribute('data-filter-value');
+      
+      // Toggle filter
+      if (activeFilters[type].includes(value)) {
+        activeFilters[type] = activeFilters[type].filter(v => v !== value);
+        btn.classList.remove('bg-primary', 'text-white');
+      } else {
+        activeFilters[type].push(value);
+        btn.classList.add('bg-primary', 'text-white');
+      }
+      
+      // Apply filters to products
+      applyFilters();
+    });
+  });
+
+  function applyFilters() {
+    const cards = document.querySelectorAll('.group[data-product-id]');
+    cards.forEach(card => {
+      let show = true;
+      const productData = {
+        category: card.getAttribute('data-category'),
+        size: card.getAttribute('data-size'),
+        color: card.getAttribute('data-color'),
+        price: parseInt(card.getAttribute('data-price')) || 0
+      };
+
+      // Category filter
+      if (activeFilters.category.length && !activeFilters.category.includes(productData.category)) {
+        show = false;
+      }
+
+      // Size filter
+      if (activeFilters.size.length) {
+        const sizes = productData.size?.split(',') || [];
+        if (!activeFilters.size.some(s => sizes.includes(s))) show = false;
+      }
+
+      // Color filter
+      if (activeFilters.color.length && !activeFilters.color.includes(productData.color)) {
+        show = false;
+      }
+
+      // Price filter
+      if (activeFilters.price.length) {
+        let priceMatch = false;
+        activeFilters.price.forEach(range => {
+          if (range === '0-50' && productData.price <= 50) priceMatch = true;
+          if (range === '50-100' && productData.price > 50 && productData.price <= 100) priceMatch = true;
+          if (range === '100-200' && productData.price > 100 && productData.price <= 200) priceMatch = true;
+          if (range === '200+' && productData.price > 200) priceMatch = true;
+        });
+        if (!activeFilters.price.length || !priceMatch) show = activeFilters.price.length === 0;
+      }
+
+      card.style.display = show ? 'flex' : 'none';
+    });
+  }
+})();
+</script>
+</body></html>

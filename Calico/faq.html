@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FAQ - CALICO</title>
+<meta name="description" content="Frequently Asked Questions about CALICO Streetwear &amp; Fashion."/>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%23ea2a33'>C</text></svg>"/>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" as="style"/>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" as="style"/>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ea2a33",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#211111",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem", 
+                        "lg": "0.5rem", 
+                        "xl": "0.75rem", 
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+/* Base marquee wrapper hides overflow and uses flexbox for seamless scrolling */
+.marquee {
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  display: flex;
+}
+
+/* Inner container that scrolls with transform for better performance */
+.marquee--inner {
+  display: flex;
+  animation: marquee 15s linear infinite;
+}
+
+/* Each snippet sits side-by-side */
+.marquee-text {
+  flex-shrink: 0;
+  white-space: nowrap;
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-25%); }
+}
+</style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#181111] dark:text-white font-display overflow-x-hidden antialiased">
+<div class="relative flex flex-col min-h-screen w-full">
+<!-- Navigation -->
+<header class="sticky top-0 z-50 w-full bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm border-b border-[#e5e5e5] dark:border-[#333]">
+<div class="px-4 md:px-10 py-4 flex items-center justify-between">
+<!-- Logo -->
+<div class="flex items-center gap-2">
+<div class="text-primary">
+<span class="material-symbols-outlined" style="font-size: 32px; font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+<a href="Index.html">
+  <h1 class="text-2xl font-bold tracking-tight uppercase dark:text-white">CALICO</h1>
+</a>
+</div>
+<!-- Desktop Nav -->
+<nav id="mainNav" class="hidden md:flex items-center gap-8">
+<a class="text-sm font-bold uppercase hover:text-primary transition-colors" href="Index.html">Home</a>
+<a class="text-sm font-bold uppercase hover:text-primary transition-colors" href="Shop.html">Shop</a>
+<a class="text-sm font-bold uppercase hover:text-primary transition-colors" href="About.html">About Us</a>
+</nav>
+<!-- Actions -->
+<div class="flex items-center gap-3">
+<button aria-label="Search" class="p-2 hover:bg-black/5 dark:hover:bg-white/10 rounded-full transition-colors">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button id="themeToggle" aria-label="Toggle dark mode" class="p-2 hover:bg-black/5 dark:hover:bg-white/10 rounded-full transition-colors">
+<span class="material-symbols-outlined">dark_mode</span>
+</button>
+<a href="Profile.html" aria-label="Account" class="p-2 hover:bg-black/5 dark:hover:bg-white/10 rounded-full transition-colors hidden sm:block">
+<button aria-label="Account" class="p-2 hover:bg-black/5 dark:hover:bg-white/10 rounded-full transition-colors hidden sm:block">
+<span class="material-symbols-outlined">person</span>
+</button>
+<a href="Cart.html" aria-label="Shopping Cart" class="relative p-2 hover:bg-black/5 dark:hover:bg-white/10 rounded-full transition-colors">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="cart-badge absolute top-1 right-1 size-2 bg-primary rounded-full hidden"></span>
+</a>
+<!-- Mobile Menu Button -->
+<button id="menuToggle" aria-label="Open menu" class="md:hidden p-2 hover:bg-black/5 dark:hover:bg-white/10 rounded-full transition-colors">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow bg-background-light dark:bg-background-dark py-16 px-4 md:px-10">
+<div class="max-w-4xl mx-auto">
+<h1 class="text-4xl md:text-6xl font-bold tracking-tighter uppercase text-text-main dark:text-white mb-12">Frequently Asked Questions</h1>
+<p class="text-text-muted dark:text-gray-400 text-lg mb-16 max-w-2xl">Find answers to common questions about Calico, our products, shipping, returns, and more. If you can't find what you're looking for, feel free to contact us.</p>
+
+<div class="space-y-4">
+<!-- FAQ Item 1 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-1">
+<span class="text-lg font-bold text-text-main dark:text-white">What is Calico?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-1" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+Calico is a streetwear and fashion brand offering expressive apparel, accessories, and lifestyle products inspired by global youth culture, designed to merge style with individuality.
+</div>
+</div>
+</div>
+
+<!-- FAQ Item 2 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-2">
+<span class="text-lg font-bold text-text-main dark:text-white">How can I place an order?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-2" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+You can place an order by browsing our products, selecting your desired items, adding them to your cart, and completing checkout with your shipping and payment details.
+</div>
+</div>
+</div>
+
+<!-- FAQ Item 3 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-3">
+<span class="text-lg font-bold text-text-main dark:text-white">What payment methods do you accept?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-3" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+We accept major credit/debit cards (Visa, Mastercard, American Express), PayPal, and other digital payment options depending on your region.
+</div>
+</div>
+</div>
+
+<!-- FAQ Item 4 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-4">
+<span class="text-lg font-bold text-text-main dark:text-white">Can I track my order?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-4" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+Yes, after your order is shipped, you'll receive a tracking number via email to follow your package in real time.
+</div>
+</div>
+</div>
+
+<!-- FAQ Item 5 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-5">
+<span class="text-lg font-bold text-text-main dark:text-white">How long does shipping take?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-5" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+Standard shipping usually takes 5–10 business days, while express shipping options vary between 2–5 business days depending on your location.
+</div>
+</div>
+</div>
+
+<!-- FAQ Item 6 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-6">
+<span class="text-lg font-bold text-text-main dark:text-white">Do you ship internationally?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-6" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+Yes, we offer worldwide shipping. Delivery times and costs may vary depending on your country.
+</div>
+</div>
+</div>
+
+<!-- FAQ Item 7 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-7">
+<span class="text-lg font-bold text-text-main dark:text-white">What is your return policy?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-7" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+Returns are accepted within 14 days of receiving your order, provided items are unused, unworn, and in their original packaging.
+</div>
+</div>
+</div>
+
+<!-- FAQ Item 8 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-8">
+<span class="text-lg font-bold text-text-main dark:text-white">How do I request a refund or exchange?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-8" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+Contact our customer support with your order number and reason for return. Once approved, you can send the item back and request a refund or exchange.
+</div>
+</div>
+</div>
+
+<!-- FAQ Item 9 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-9">
+<span class="text-lg font-bold text-text-main dark:text-white">How do I cancel an order?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-9" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+Orders can only be canceled before they are processed for shipping. Contact customer support immediately with your order number to request a cancellation.
+</div>
+</div>
+</div>
+
+<!-- FAQ Item 10 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-10">
+<span class="text-lg font-bold text-text-main dark:text-white">Are your products authentic?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-10" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+Yes, all Calico products are genuine and designed by our in-house team. We do not sell counterfeit or unauthorized items.
+</div>
+</div>
+</div>
+
+<!-- FAQ Item 11 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-11">
+<span class="text-lg font-bold text-text-main dark:text-white">How can I contact customer support?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-11" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+You can reach us via email at support@calicostreetwear.com or through our website's contact form. Response times are usually within 24–48 hours.
+</div>
+</div>
+</div>
+
+<!-- FAQ Item 12 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-12">
+<span class="text-lg font-bold text-text-main dark:text-white">Do you offer gift cards?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-12" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+Yes, digital gift cards are available in various denominations, which can be purchased on our website and sent via email.
+</div>
+</div>
+</div>
+
+<!-- FAQ Item 13 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-13">
+<span class="text-lg font-bold text-text-main dark:text-white">Can I change my shipping address after placing an order?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-13" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+Shipping addresses can only be updated before the order is processed. Contact customer support as soon as possible if you need to make changes.
+</div>
+</div>
+</div>
+
+<!-- FAQ Item 14 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-14">
+<span class="text-lg font-bold text-text-main dark:text-white">How do I create an account?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-14" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+Click the "Sign Up" button on the website, enter your details, and verify your email to create an account.
+</div>
+</div>
+</div>
+
+<!-- FAQ Item 15 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-15">
+<span class="text-lg font-bold text-text-main dark:text-white">How do I reset my password?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-15" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+Use the "Forgot Password" link on the login page, enter your email, and follow the instructions to reset your password.
+</div>
+</div>
+</div>
+
+<!-- FAQ Item 16 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-16">
+<span class="text-lg font-bold text-text-main dark:text-white">Is my personal information secure?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-16" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+Yes, we use encryption and secure payment gateways to protect your personal and financial information.
+</div>
+</div>
+</div>
+
+<!-- FAQ Item 17 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-17">
+<span class="text-lg font-bold text-text-main dark:text-white">Do you offer discounts or promotions?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-17" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+Yes, we regularly run promotions, seasonal sales, and special discounts. Sign up for our newsletter to stay updated.
+</div>
+</div>
+</div>
+
+<!-- FAQ Item 18 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-18">
+<span class="text-lg font-bold text-text-main dark:text-white">How do I apply a promo code?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-18" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+Enter your promo code at checkout in the designated field, and the discount will be applied to your order total.
+</div>
+</div>
+</div>
+
+<!-- FAQ Item 19 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-19">
+<span class="text-lg font-bold text-text-main dark:text-white">Can I pre-order items?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-19" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+Certain items may be available for pre-order. Availability and estimated delivery dates will be indicated on the product page.
+</div>
+</div>
+</div>
+
+<!-- FAQ Item 20 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-20">
+<span class="text-lg font-bold text-text-main dark:text-white">What should I do if I receive a damaged or incorrect item?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-20" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+Contact customer support immediately with photos of the item and your order number. We will provide a replacement or refund.
+</div>
+</div>
+</div>
+
+<!-- FAQ Item 21 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-21">
+<span class="text-lg font-bold text-text-main dark:text-white">Are your products available in stores?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-21" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+Currently, Calico products are sold exclusively online via our website.
+</div>
+</div>
+</div>
+
+<!-- FAQ Item 22 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-22">
+<span class="text-lg font-bold text-text-main dark:text-white">How often do you release new products?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-22" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+We release new collections and drops regularly, typically every few weeks, depending on the season.
+</div>
+</div>
+</div>
+
+<!-- FAQ Item 23 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-23">
+<span class="text-lg font-bold text-text-main dark:text-white">Can I request a product restock notification?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-23" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+Yes, you can sign up for restock alerts on the product page to receive an email when it becomes available again.
+</div>
+</div>
+</div>
+
+<!-- FAQ Item 24 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-24">
+<span class="text-lg font-bold text-text-main dark:text-white">Do you offer wholesale or bulk orders?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-24" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+Yes, contact our business team at wholesale@calicostreetwear.com for bulk purchase inquiries.
+</div>
+</div>
+</div>
+
+<!-- FAQ Item 25 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-25">
+<span class="text-lg font-bold text-text-main dark:text-white">How do I sign up for your newsletter?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-25" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+Enter your email in the newsletter signup section at the bottom of our website to receive updates, promotions, and news.
+</div>
+</div>
+</div>
+
+<!-- FAQ Item 26 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-26">
+<span class="text-lg font-bold text-text-main dark:text-white">Are there care instructions for your products?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-26" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+Yes, care labels are included with each product, and washing/care instructions are available on the product page.
+</div>
+</div>
+</div>
+
+<!-- FAQ Item 27 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-27">
+<span class="text-lg font-bold text-text-main dark:text-white">Can I customize or personalize products?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-27" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+At the moment, customizations are not available, but we occasionally offer limited personalized drops.
+</div>
+</div>
+</div>
+
+<!-- FAQ Item 28 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-28">
+<span class="text-lg font-bold text-text-main dark:text-white">Do you have a size guide?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-28" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+Yes, a size guide is available on each product page to help you select the correct fit.
+</div>
+</div>
+</div>
+
+<!-- FAQ Item 29 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-29">
+<span class="text-lg font-bold text-text-main dark:text-white">How do I unsubscribe from marketing emails?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-29" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+Click the "unsubscribe" link at the bottom of any marketing email to remove yourself from the mailing list.
+</div>
+</div>
+</div>
+
+<!-- FAQ Item 30 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-30">
+<span class="text-lg font-bold text-text-main dark:text-white">What do I do if I forget my account login details?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-30" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+Use the "Forgot Password" or "Forgot Email" options on the login page, or contact customer support for assistance.
+</div>
+</div>
+</div>
+
+<!-- FAQ Item 31 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-31">
+<span class="text-lg font-bold text-text-main dark:text-white">How can I provide feedback about my shopping experience?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-31" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+Use our contact form or email support@calicostreetwear.com to share your feedback.
+</div>
+</div>
+</div>
+
+<!-- FAQ Item 32 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-32">
+<span class="text-lg font-bold text-text-main dark:text-white">Do you support sustainable or ethical practices?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-32" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+Yes, we prioritize sustainable materials and ethical manufacturing practices in our production.
+</div>
+</div>
+</div>
+
+<!-- FAQ Item 33 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-33">
+<span class="text-lg font-bold text-text-main dark:text-white">Are there age restrictions for purchasing certain items?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-33" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+Customers must be at least 13 years old to make a purchase, or have parental consent where required by law.
+</div>
+</div>
+</div>
+
+<!-- FAQ Item 34 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-34">
+<span class="text-lg font-bold text-text-main dark:text-white">How do I report a website issue or bug?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-34" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+Contact support@calicostreetwear.com with details and screenshots of the issue.
+</div>
+</div>
+</div>
+
+<!-- FAQ Item 35 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-35">
+<span class="text-lg font-bold text-text-main dark:text-white">Can I use multiple promo codes on a single order?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-35" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+No, only one promo code can be applied per order.
+</div>
+</div>
+</div>
+
+<!-- FAQ Item 36 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-36">
+<span class="text-lg font-bold text-text-main dark:text-white">What currencies are supported on your website?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-36" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+Our website supports multiple currencies including USD, EUR, GBP, and others depending on your location.
+</div>
+</div>
+</div>
+
+<!-- FAQ Item 37 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-37">
+<span class="text-lg font-bold text-text-main dark:text-white">How do I know if an item is back in stock?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-37" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+Sign up for restock notifications on the product page, and you'll receive an email when it's available.
+</div>
+</div>
+</div>
+
+<!-- FAQ Item 38 -->
+<div class="border-b border-surface dark:border-gray-700">
+<button class="faq-question w-full text-left py-6 px-4 md:px-6 flex justify-between items-center hover:bg-surface dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset" aria-expanded="false" aria-controls="faq-38">
+<span class="text-lg font-bold text-text-main dark:text-white">Do you offer student or loyalty discounts?</span>
+<span class="material-symbols-outlined text-primary transform transition-transform duration-300">expand_more</span>
+</button>
+<div id="faq-38" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+We may offer exclusive promotions for students or loyalty members. Sign up for newsletters or special programs to stay informed.
+</div>
+</div>
+</button>
+<!-- Newsletter & Footer -->
+<footer class="bg-[#181111] text-white pt-20 pb-10 px-4 md:px-10 mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10 border-b border-gray-800 pb-16">
+<!-- Brand Column -->
+<div class="md:col-span-4 space-y-6">
+<h2 class="text-3xl font-bold tracking-tight uppercase">CALICO</h2>
+<p class="text-gray-400 max-w-xs">
+                        Defining the intersection of urban street culture and global fashion. Stay bold.
+                    </p>
+<div class="flex gap-4">
+<a aria-label="Instagram" class="size-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="font-bold text-xs">IG</span>
+</a>
+<a aria-label="TikTok" class="size-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="font-bold text-xs">TT</span>
+</a>
+<a aria-label="YouTube" class="size-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="font-bold text-xs">YT</span>
+</a>
+</div>
+</div>
+<!-- Links Column 1 -->
+<div class="md:col-span-2">
+<h4 class="font-bold uppercase mb-6 text-gray-200">Shop</h4>
+<ul class="space-y-4 text-gray-400 text-sm">
+<li><a class="hover:text-white transition-colors" href="Newarrivals.html">New Arrivals</a></li>
+<li><a class="hover:text-white transition-colors" href="Bestsellers.html">Best Sellers</a></li>
+<li><a class="hover:text-white transition-colors" href="Apparel.html">Apparel</a></li>
+<li><a class="hover:text-white transition-colors" href="accessories.html">Accessories</a></li>
+</ul>
+</div>
+<!-- Links Column 2 -->
+<div class="md:col-span-2">
+<h4 class="font-bold uppercase mb-6 text-gray-200">Support</h4>
+<ul class="space-y-4 text-gray-400 text-sm">
+<li><a class="hover:text-white transition-colors" href="faq.html">FAQ</a></li>
+<li><a class="hover:text-white transition-colors" href="shippingreturns.html">Shipping &amp; Returns</a></li>
+<li><a class="hover:text-white transition-colors" href="sizeguides.html">Size Guide</a></li>
+<li><a class="hover:text-white transition-colors" href="contact.html">Contact Us</a></li>
+</ul>
+</div>
+<!-- Newsletter Column -->
+<div class="md:col-span-4">
+<h4 class="font-bold uppercase mb-6 text-gray-200">Join the LUV Club</h4>
+<p class="text-gray-400 text-sm mb-4">Get 10% off your first order and exclusive access to drops.</p>
+<form class="flex flex-col gap-3">
+<input class="w-full bg-gray-800 border-none rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-primary placeholder-gray-500" placeholder="Enter your email" type="email"/>
+<button class="w-full bg-white text-black font-bold uppercase rounded-lg px-4 py-3 hover:bg-primary hover:text-white transition-colors" type="button">
+                            Subscribe
+                        </button>
+</form>
+</div>
+</div>
+<div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+<p>© 2024 CALICO SEOUL. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</div>
+<script src="app.js"></script>
+<script>
+(function(){
+  const menuToggle = document.getElementById('menuToggle');
+  const mainNav = document.getElementById('mainNav');
+  if (menuToggle && mainNav && !menuToggle.dataset.bound) {
+    menuToggle.addEventListener('click', () => mainNav.classList.toggle('hidden'));
+    menuToggle.dataset.bound = '1';
+  }
+  const themeToggle = document.getElementById('themeToggle');
+  const root = document.documentElement;
+  function applyTheme(dark){ if(dark) root.classList.add('dark'); else root.classList.remove('dark'); localStorage.setItem('calicoTheme', dark ? 'dark' : 'light'); }
+  const stored = localStorage.getItem('calicoTheme'); if(stored) applyTheme(stored === 'dark');
+<div id="faq-6" class="faq-answer overflow-hidden max-h-0 transition-all duration-300 ease-in-out">
+<div class="px-4 md:px-6 pb-6 text-text-muted dark:text-gray-400 leading-relaxed">
+Yes, we offer worldwide shipping. Delivery times and costs may vary depending on your country.
+</div>
+  if(themeToggle && !themeToggle.dataset.bound){ themeToggle.addEventListener('click', ()=>{ const isDark = root.classList.toggle('dark'); localStorage.setItem('calicoTheme', isDark ? 'dark' : 'light'); }); themeToggle.dataset.bound = '1'; }
+  document.querySelectorAll('footer form').forEach(form=>{ const email = form.querySelector('input[type="email"]'); const btn = form.querySelector('button[type="button"], button[type="submit"]'); if(!email || !btn) return; if(btn.dataset.bound) return; btn.addEventListener('click', async (e)=>{ e.preventDefault(); const val = (email.value||'').trim(); const re = /^\S+@\S+\.\S+$/; if(!re.test(val)){ alert('Please enter a valid email'); email.focus(); return; } try{ await fetch('/subscribe', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({email: val})}); alert('Subscribed — thank you!'); email.value = ''; }catch(_){ alert('Subscribed (local) — no backend connected.'); email.value = ''; } }); btn.dataset.bound = '1'; });
+})();
+</script>
+</body></html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CALICO - Streetwear &amp; Fashion</title>
+<meta name="description" content="CALICO Streetwear - Expressive gear for global youth. Shop new drops, apparel, and accessories with worldwide shipping."/>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%23ea2a33'>C</text></svg>"/>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" as="style"/>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" as="style"/>
+<script type="module" src="https://cdn.shopify.com/storefront/web-components.js"></script>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ea2a33",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#211111",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem", 
+                        "lg": "0.5rem", 
+                        "xl": "0.75rem", 
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+/* Base marquee wrapper hides overflow and uses flexbox for seamless scrolling */
+.marquee {
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  display: flex;
+}
+
+/* Inner container that scrolls with transform for better performance */
+.marquee--inner {
+  display: flex;
+  animation: marquee 15s linear infinite;
+}
+
+/* Each snippet sits side-by-side */
+.marquee-text {
+  flex-shrink: 0;
+  white-space: nowrap;
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-25%); }
+}
+</style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#181111] dark:text-white font-display overflow-x-hidden antialiased">
+<div class="relative flex flex-col min-h-screen w-full">
+<!-- Navigation -->
+<header class="sticky top-0 z-50 w-full bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm border-b border-[#e5e5e5] dark:border-[#333]">
+<div class="px-4 md:px-10 py-4 flex items-center justify-between">
+<!-- Logo -->
+<div class="flex items-center gap-2">
+<div class="text-primary">
+<span class="material-symbols-outlined" style="font-size: 32px; font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+<a href="Index.html">
+  <h1 class="text-2xl font-bold tracking-tight uppercase dark:text-white">CALICO</h1>
+</a>
+</div>
+<!-- Desktop Nav -->
+<nav id="mainNav" class="hidden md:flex items-center gap-8">
+<a class="text-sm font-bold uppercase hover:text-primary transition-colors" href="Index.html">Home</a>
+<a class="text-sm font-bold uppercase hover:text-primary transition-colors" href="Shop.html">Shop</a>
+<a class="text-sm font-bold uppercase hover:text-primary transition-colors" href="About.html">About Us</a>
+</nav>
+<a id="signInLink" class="text-sm font-bold uppercase hover:text-primary transition-colors" href="Login.html">Sign In</a>
+<button id="navSignOutBtn" class="text-sm font-bold uppercase hover:text-primary transition-colors hidden">Sign Out</button>
+<!-- Actions -->
+<div class="flex items-center gap-3">
+  <button aria-label="Search" class="p-2 hover:bg-black/5 dark:hover:bg-white/10 rounded-full transition-colors">
+    <span class="material-symbols-outlined text-black dark:text-white">search</span>
+  </button>
+<button id="themeToggle" aria-label="Toggle dark mode" class="p-2 hover:bg-black/5 dark:hover:bg-white/10 rounded-full transition-colors">
+<span class="material-symbols-outlined">dark_mode</span>
+</button>
+<a href="Profile.html" aria-label="Account" class="p-2 hover:bg-black/5 dark:hover:bg-white/10 rounded-full transition-colors hidden sm:block">
+<button aria-label="Account" class="p-2 hover:bg-black/5 dark:hover:bg-white/10 rounded-full transition-colors hidden sm:block">
+<span class="material-symbols-outlined">person</span>
+</button>
+<a href="Cart.html" aria-label="Shopping Cart" class="relative p-2 hover:bg-black/5 dark:hover:bg-white/10 rounded-full transition-colors">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="cart-badge absolute top-1 right-1 size-2 bg-primary rounded-full hidden"></span>
+</a>
+<!-- Mobile Menu Button -->
+<button id="menuToggle" aria-label="Open menu" class="md:hidden p-2 hover:bg-black/5 dark:hover:bg-white/10 rounded-full transition-colors">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="w-full px-4 md:px-10 pt-6 pb-6">
+<div class="relative w-full min-h-[600px] rounded-lg overflow-hidden flex flex-col items-center justify-center text-center p-6 md:p-12 group bg-neutral-900">
+<!-- Background Image -->
+<div class="absolute inset-0 z-0 w-full h-full bg-cover bg-center opacity-60 transition-transform duration-700 group-hover:scale-105" data-alt="Gritty high contrast street photography of model in Seoul at night with neon lights" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD8ynT_w19jF_c-EZxda2HtIcNbhj5NcHKyNdAYk5AOJRjR1JcM39olenvbDXh1Wfwkh3l0NAMHzBj-xXbWYt5Q_2cL6LMm-0vEzrfz_0a60Mp57DcfOcU75qynnSx40kl6ewikJnR5-ZDDYvqexnoeZh9JXeVo3YKaZsItT2K8MmH4ApFJYXTBhTFDdKDu6iPA-9ZV3ZsHaH29advhk4AaW52McG3Lptk69RhiXV1YXDLdt43B-EHKbZQuiRGjf0I8tfnfk3CpEp_g');">
+</div>
+<!-- Overlay Gradient -->
+<div class="absolute inset-0 z-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<!-- Content -->
+<div class="relative z-10 max-w-4xl flex flex-col items-center gap-6">
+<span class="inline-block px-3 py-1 bg-primary text-white text-xs font-bold uppercase tracking-widest rounded mb-2">
+                        FW24 Collection
+                    </span>
+<h1 class="text-white text-5xl md:text-7xl lg:text-8xl font-black leading-[0.9] tracking-tighter uppercase break-words">
+                        Urban State<br/>of Mind
+</h1>
+<p class="text-gray-200 text-lg md:text-xl max-w-lg font-medium">
+                        The new drop is here. Expressive gear for the global youth.
+                    </p>
+<div class="pt-4">
+<a href="Newarrivals.html"
+  <button aria-label="Shop the FW24 Collection" class="bg-primary hover:bg-red-600 hover:scale-105 text-white text-base font-bold py-4 px-10 rounded-lg transition-all transform hover:-translate-y-1 shadow-lg hover:shadow-red-500/25 uppercase tracking-wider">
+                            Shop The Drop
+                        </button>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Ticker / Marquee -->
+<div class="marquee bg-background-light dark:bg-background-dark py-6 border-y border-[#e5e5e5] dark:border-[#333]">
+  <div class="marquee--inner">
+    <span class="marquee-text">
+      CALICO GLOBAL // STREET CULTURE // NEW DROP // WORLDWIDE SHIPPING // STATE OF MIND //
+    </span>
+    <span class="marquee-text">
+      CALICO GLOBAL // STREET CULTURE // NEW DROP // WORLDWIDE SHIPPING // STATE OF MIND //
+    </span>
+    <span class="marquee-text">
+      CALICO GLOBAL // STREET CULTURE // NEW DROP // WORLDWIDE SHIPPING // STATE OF MIND //
+    </span>
+    <span class="marquee-text">
+      CALICO GLOBAL // STREET CULTURE // NEW DROP // WORLDWIDE SHIPPING // STATE OF MIND //
+    </span>
+  </div>
+</div>
+<!-- New Arrivals -->
+<section class="px-4 md:px-10 py-16">
+<div class="flex flex-col md:flex-row justify-between items-end mb-10 gap-4">
+<div>
+<h2 class="text-4xl font-bold tracking-tighter uppercase mb-2">New Arrivals</h2>
+<p class="text-gray-500 dark:text-gray-400">Fresh drops, limited pieces — grab yours before they’re gone.</p>
+</div>
+<a class="text-sm font-bold border-b-2 border-primary pb-0.5 hover:text-primary transition-colors" href="Newarrivals.html">VIEW ALL</a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-10">
+<!-- Product 1 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] w-full overflow-hidden rounded-lg bg-gray-100 mb-4">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Oversized black graphic tee with abstract red print" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCfO_4QyjreIhElGelBVcA4OY0THTyrU_37JhcBjSuwdNj3bVg7xh1ZvGgNqBdtvX1zHlsQK6yExGLOY1Q5LKrkWP9t-jsaDfqOOiwsA3f0XTEOj-fTWT8-1ZbcL4hdgYEuGViZfEA6lT2rwCAXiPc6btfmu60IgDygjoyXMc4VMX41aCFibKo7R7hHhkwEHhX-1hHtJ6d_OU9jNj5Ti4dhv6HwL0MJY0nsa9XJ7kcUjBEzcnuTEgv4__dMrVIGRVQu-m3myhkKrNOl');">
+</div>
+<div class="absolute bottom-3 left-3 bg-white dark:bg-black px-2 py-1 text-xs font-bold uppercase rounded">New</div>
+<button aria-label="Add Graphic Tee 01 to cart" class="absolute bottom-3 right-3 size-10 bg-white dark:bg-black rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity shadow-lg hover:bg-primary hover:text-white">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+</button>
+</div>
+<div class="space-y-1">
+<h3 class="text-base font-bold uppercase leading-none group-hover:text-primary transition-colors">Graphic Tee 01</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">$45.00</p>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] w-full overflow-hidden rounded-lg bg-gray-100 mb-4">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Heavyweight grey hoodie with embroidered logo center chest" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDi-Q3Hm_vNo3cuVILWVG6p8ikZI7ZRMDz2kZnx0vmK5pQ8tSq4fxCjKLsl2I4-EoEv4ThD3UxYyn4E00RxYsna4Hm4g6pM4T07zZtK9jnTXriDQW2Jpg6pbbTSr_QFLJQr3df-Ta0uPVHJcUvo2L6S4DSLSTqaxr2ML5bn-cOIKUEKG-Evhs69-nOwo7GCVPNzkpIYU8U0AU_OVYbH_zYmqQKz2I7oHOxRFtuuh9QJ96KxNuWPpPfLjY-L94Sq44iWLBiypxbBEW3p');">
+</div>
+<button aria-label="Add Logo Hoodie to cart" class="absolute bottom-3 right-3 size-10 bg-white dark:bg-black rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity shadow-lg hover:bg-primary hover:text-white">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+</button>
+</div>
+<div class="space-y-1">
+<h3 class="text-base font-bold uppercase leading-none group-hover:text-primary transition-colors">Logo Hoodie</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">$85.00</p>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] w-full overflow-hidden rounded-lg bg-gray-100 mb-4">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Orange knitted beanie on a minimal background" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBN_ADHzYvIESy2hsiPJeFtrKxyEA8gaeCU5d5VL4IKjIhbLM6XTR7eG31SmRgKwcR3YZzt7VWj20-zpCNtGJQGvPQNB5cbq-5yepuqZx1Mmotwv9e7wGIb6CbWAJ1vCABDog7W5CQrk7kg1oYExjR8ixLEJTPDxXiTMAHjXDofdWEQznwjfEgue-x2bPgEc95Q92vD0GLmtBrSDSLboJpn2UpoYaDJY7KDBZJZgZ0xLm6T66f9wee1ex2zHKqkNI2_MFUS1W6HsBaq');">
+</div>
+<div class="absolute bottom-3 left-3 bg-primary text-white px-2 py-1 text-xs font-bold uppercase rounded">Hot</div>
+<button aria-label="Add Knitted Beanie to cart" class="absolute bottom-3 right-3 size-10 bg-white dark:bg-black rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity shadow-lg hover:bg-primary hover:text-white">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+</button>
+</div>
+<div class="space-y-1">
+<h3 class="text-base font-bold uppercase leading-none group-hover:text-primary transition-colors">Knitted Beanie</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">$30.00</p>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-[3/4] w-full overflow-hidden rounded-lg bg-gray-100 mb-4">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Black utility cargo pants styled with sneakers" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDgqSgsqJ613JUxPfewkeOjEcAAMZqegDWVcg1ImTqJcW6lDVzsfYY733HV7ej6VmWT8yZ4PK-pk6j9DrAoL8HSV_l9tKV5E0IwfFaJ7wgQXBUxRzN8VRu8s18-__PSLWU4XPJYU2qQ77UJ7zlAlBIKReFaFo_nYepmWaTXXEAy5LnHmjgqdJU6kduGBoBm4xef1TBLbUSi4PUSQwyUDNfENnCmELb27KdAgPBp4nFPfr6hWZanD7-RMeqHClCGx3iJt-HPril_8VAA');">
+</div>
+<button aria-label="Add Utility Cargo to cart" class="absolute bottom-3 right-3 size-10 bg-white dark:bg-black rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity shadow-lg hover:bg-primary hover:text-white">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+</button>
+</div>
+<div class="space-y-1">
+<h3 class="text-base font-bold uppercase leading-none group-hover:text-primary transition-colors">Utility Cargo</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">$95.00</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Brand Statement -->
+<section class="py-24 px-4 md:px-10 bg-white dark:bg-[#1a0e0e] border-y border-[#e5e5e5] dark:border-[#333]">
+<div class="max-w-4xl mx-auto text-center">
+<span class="material-symbols-outlined text-primary text-5xl mb-6">star</span>
+<h2 class="text-4xl md:text-6xl font-black uppercase leading-tight tracking-tight mb-8">
+                    Expressive gear for the global youth. Designed globally. Worn everywhere.
+                </h2>
+<a class="inline-flex items-center gap-2 text-sm font-bold border-b-2 border-current pb-0.5 hover:text-primary hover:border-primary transition-all" href="About.html">
+                    READ OUR STORY <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- Collections / Categories -->
+<section class="px-4 md:px-10 py-16">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 h-auto md:h-[600px]">
+<!-- Category 1 -->
+<div class="relative group overflow-hidden rounded-lg h-[400px] md:h-full">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Group of friends wearing oversized hoodies sitting on stairs in urban seoul setting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA3uZx32UcqbdoI4etv4J_4iaZ2iNkKE073q03NaFOUlrvqav-_GvgV8oh6CVecqS-wKmlT5TWHYDYidoi3XIeBDEosItrl8tJmvywx7G0jmUTIaWJbIBxlQIbmCJ_Kfpy9Xz-Es5Ypffx9-VGCM4ci3SJX5P2_fh8bK6hci_yfqzhHh47Sh75T9LYO214kSZQllHoo6rAP_JkiYyeCCrIGwUHvEAHptakkGrGCzeH2vN00r6sdpdQT_yeTaDfo6EmOESIyHXTyjOI2');">
+</div>
+<div class="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors"></div>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center p-6">
+<h3 class="text-white text-4xl font-bold uppercase mb-4 tracking-tighter">Apparel</h3>
+<a href="Apparel.html">
+  <button class="bg-white text-black hover:bg-primary hover:text-white px-6 py-3 rounded font-bold uppercase text-sm transition-colors">
+    Shop Clothing
+  </button>
+</a>
+</div>
+</div>
+<!-- Category 2 -->
+<div class="relative group overflow-hidden rounded-lg h-[400px] md:h-full">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Close up of silver chains and rings accessories on model" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCmAqhXhksMrUClVK_3_LZRxMHN1cVUwRnigwB_fzamfOcWXoETj5IjeyfZ1W5bN4gXuDTu6rs-3wd_7Xm3Ib3kXryBkMshiYNYqfm3NpAaLnQv1FThxzBfxlSR73V33_OHvee08C_eMvDH4hBwQ1xFukeo0SBv-BX8jPfSdz4V3MLYH99NqKks5ylyaFInCiBPxqn_0IMchSc2j-cff77eYYlNLseVMtV5bn306_B4-Iqp7fqBxCup-cKXrACJwNoNQWUSllpzuCqb');">
+</div>
+<div class="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors"></div>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center p-6">
+<h3 class="text-white text-4xl font-bold uppercase mb-4 tracking-tighter">Accessories</h3>
+<a href="accessories.html">
+  <button class="bg-white text-black hover:bg-primary hover:text-white px-6 py-3 rounded font-bold uppercase text-sm transition-colors">
+    Shop Accessories
+  </button>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter & Footer -->
+<footer class="bg-[#181111] text-white pt-20 pb-10 px-4 md:px-10 mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10 border-b border-gray-800 pb-16">
+<!-- Brand Column -->
+<div class="md:col-span-4 space-y-6">
+<h2 class="text-3xl font-bold tracking-tight uppercase">CALICO</h2>
+<p class="text-gray-400 max-w-xs">
+                        Defining the intersection of urban street culture and global fashion. Stay bold.
+                    </p>
+<div class="flex gap-4">
+<a aria-label="Instagram" class="size-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors" target="_blank" href="https://www.instagram.com/calicowlrd/">
+<span class="font-bold text-xs">IG</span>
+</a>
+<a aria-label="TikTok" class="size-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors" target="_blank" href="https://www.tiktok.com/@calicowr1d">
+<span class="font-bold text-xs">TT</span>
+</a>
+<a aria-label="YouTube" class="size-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors" target="_blank" href="https://www.youtube.com/@CalicoWRLD">
+<span class="font-bold text-xs">YT</span>
+</a>
+</div>
+</div>
+<!-- Links Column 1 -->
+<div class="md:col-span-2">
+<h4 class="font-bold uppercase mb-6 text-gray-200">Shop</h4>
+<ul class="space-y-4 text-gray-400 text-sm">
+<li><a class="hover:text-white transition-colors" href="arrivals.html">New Arrivals</a></li>
+<li><a class="hover:text-white transition-colors" href="Bestsellers.html">Best Sellers</a></li>
+<li><a class="hover:text-white transition-colors" href="Apparel.html">Apparel</a></li>
+<li><a class="hover:text-white transition-colors" href="accessories.html">Accessories</a></li>
+</ul>
+</div>
+<!-- Links Column 2 -->
+<div class="md:col-span-2">
+<h4 class="font-bold uppercase mb-6 text-gray-200">Support</h4>
+<ul class="space-y-4 text-gray-400 text-sm">
+<li><a class="hover:text-white transition-colors" href="faq.html">FAQ</a></li>
+<li><a class="hover:text-white transition-colors" href="shippingreturns.html">Shipping &amp; Returns</a></li>
+<li><a class="hover:text-white transition-colors" href="sizeguides.html">Size Guide</a></li>
+<li><a class="hover:text-white transition-colors" href="contact.html">Contact Us</a></li>
+</ul>
+</div>
+<!-- Newsletter Column -->
+<div class="md:col-span-4">
+<h4 class="font-bold uppercase mb-6 text-gray-200">Join the Calico Club</h4>
+<p class="text-gray-400 text-sm mb-4">Get 10% off your first order and exclusive access to drops.</p>
+<form class="flex flex-col gap-3">
+<input class="w-full bg-gray-800 border-none rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-primary placeholder-gray-500" placeholder="Enter your email" type="email"/>
+<button class="w-full bg-white text-black font-bold uppercase rounded-lg px-4 py-3 hover:bg-primary hover:text-white transition-colors" type="button">
+                            Subscribe
+                        </button>
+</form>
+</div>
+</div>
+<div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+<p>© 2024 CALICO. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-white transition-colors" href="privacypolicy.html">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="termsofservice.html">Terms of Service</a>
+</div>
+</div>
+</footer>
+</div>
+<script src="app.js"></script>
+<script>
+(function(){
+  const menuToggle = document.getElementById('menuToggle');
+  const mainNav = document.getElementById('mainNav');
+  if (menuToggle && mainNav && !menuToggle.dataset.bound) {
+    menuToggle.addEventListener('click', () => mainNav.classList.toggle('hidden'));
+    menuToggle.dataset.bound = '1';
+  }
+  const themeToggle = document.getElementById('themeToggle');
+  const root = document.documentElement;
+  function applyTheme(dark){ if(dark) root.classList.add('dark'); else root.classList.remove('dark'); localStorage.setItem('calicoTheme', dark ? 'dark' : 'light'); }
+  const stored = localStorage.getItem('calicoTheme'); if(stored) applyTheme(stored === 'dark');
+  if(themeToggle && !themeToggle.dataset.bound){ themeToggle.addEventListener('click', ()=>{ const isDark = root.classList.toggle('dark'); localStorage.setItem('calicoTheme', isDark ? 'dark' : 'light'); }); themeToggle.dataset.bound = '1'; }
+  document.querySelectorAll('footer form').forEach(form=>{ const email = form.querySelector('input[type="email"]'); const btn = form.querySelector('button[type="button"], button[type="submit"]'); if(!email || !btn) return; if(btn.dataset.bound) return; btn.addEventListener('click', async (e)=>{ e.preventDefault(); const val = (email.value||'').trim(); const re = /^\S+@\S+\.\S+$/; if(!re.test(val)){ alert('Please enter a valid email'); email.focus(); return; } try{ await fetch('/subscribe', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({email: val})}); alert('Subscribed — thank you!'); email.value = ''; }catch(_){ alert('Subscribed (local) — no backend connected.'); email.value = ''; } }); btn.dataset.bound = '1'; });
+
+  // Helper functions for login/logout
+  function logoutUser() {
+    localStorage.removeItem('isLoggedIn');
+    localStorage.removeItem('username');
+    updateNavbar();
+    window.location.href = 'Login.html';
+  }
+
+  function updateNavbar() {
+    const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+    const signInLink = document.getElementById('signInLink');
+    const navSignOutBtn = document.getElementById('navSignOutBtn');
+    if (signInLink) signInLink.classList.toggle('hidden', isLoggedIn);
+    if (navSignOutBtn) navSignOutBtn.classList.toggle('hidden', !isLoggedIn);
+  }
+
+  // NAV SIGN OUT BUTTON
+  const navSignOutBtn = document.getElementById('navSignOutBtn');
+  if(navSignOutBtn && !navSignOutBtn.dataset.bound){
+    navSignOutBtn.addEventListener('click', logoutUser);
+    navSignOutBtn.dataset.bound = '1';
+  }
+
+  // Update navbar on load
+  updateNavbar();
+})();
+</script>
+</body>
+</html>

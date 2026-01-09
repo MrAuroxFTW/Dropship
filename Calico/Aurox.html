@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurox Bio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            background: #000;
+        }
+        .video-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            object-fit: cover;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 2;
+        }
+        .content {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            z-index: 10;
+            opacity: 0;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+            animation: slideUp 2s ease-out forwards;
+        }
+        @keyframes slideUp {
+            from {
+                transform: translate(-50%, 100%);
+                opacity: 0;
+            }
+            to {
+                transform: translate(-50%, -50%);
+                opacity: 1;
+            }
+        }
+        .content h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        .content p {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+        }
+        .social {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .social a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 2rem;
+            transition: opacity 0.3s;
+        }
+        .social a:hover {
+            opacity: 0.7;
+        }
+        .volume-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background: rgba(0,0,0,0.5);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 20;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s;
+        }
+        .volume-btn:hover {
+            background: rgba(0,0,0,0.7);
+        }
+        .volume-btn i {
+            font-size: 24px;
+            color: #fff;
+        }
+        @media (max-width: 768px) {
+            .content h1 { font-size: 2rem; }
+            .content p { font-size: 1rem; }
+            .social a { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Video Background -->
+    <video autoplay muted loop playsinline class="video-bg">
+        <source src="Music/David Bowie - _Heroes_ (Official Video) [HD].mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <!-- Dark overlay for readability -->
+    <div class="overlay"></div>
+
+    <!-- Centered content -->
+    <div class="content">
+        <h1>Aurox</h1>
+        <p>Music • Acting • Projects</p>
+        <div class="social">
+            <a href="SOCIAL_INSTAGRAM_LINK">📷</a>
+            <a href="SOCIAL_YOUTUBE_LINK">▶️</a>
+            <a href="SOCIAL_SPOTIFY_LINK">🎵</a>
+        </div>
+    </div>
+
+    <!-- Background music (can be same or different track) -->
+    <audio id="bg-music" loop preload="auto">
+        <source src="AUDIO_FILE_URL" type="audio/mpeg">
+    </audio>
+
+    <!-- Volume toggle button -->
+    <button id="volume-toggle" class="volume-btn">
+        <i id="volume-icon">🔇</i>
+    </button>
+
+    <script>
+        const video = document.querySelector('.video-bg');
+        const toggle = document.getElementById('volume-toggle');
+        const icon = document.getElementById('volume-icon');
+
+        // Set initial volume
+        video.volume = 0.3;
+
+        let isMuted = true;
+
+        toggle.addEventListener('click', () => {
+            if (isMuted) {
+                video.muted = false;
+                icon.textContent = '🔊';
+            } else {
+                video.muted = true;
+                icon.textContent = '🔇';
+            }
+            isMuted = !isMuted;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>New Arrivals - CALICO</title>
+<meta name="description" content="Discover the latest new arrivals at CALICO Streetwear &amp; Fashion."/>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%23ea2a33'>C</text></svg>"/>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" as="style"/>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" as="style"/>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ea2a33",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#211111",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem", 
+                        "lg": "0.5rem", 
+                        "xl": "0.75rem", 
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+/* Base marquee wrapper hides overflow and uses flexbox for seamless scrolling */
+.marquee {
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  display: flex;
+}
+
+/* Inner container that scrolls with transform for better performance */
+.marquee--inner {
+  display: flex;
+  animation: marquee 15s linear infinite;
+}
+
+/* Each snippet sits side-by-side */
+.marquee-text {
+  flex-shrink: 0;
+  white-space: nowrap;
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-25%); }
+}
+</style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#181111] dark:text-white font-display overflow-x-hidden antialiased">
+<div class="relative flex flex-col min-h-screen w-full">
+<!-- Navigation -->
+<header class="sticky top-0 z-50 w-full bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm border-b border-[#e5e5e5] dark:border-[#333]">
+<div class="px-4 md:px-10 py-4 flex items-center justify-between">
+<!-- Logo -->
+<div class="flex items-center gap-2">
+<div class="text-primary">
+<span class="material-symbols-outlined" style="font-size: 32px; font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+<a href="Index.html">
+  <h1 class="text-2xl font-bold tracking-tight uppercase dark:text-white">CALICO</h1>
+</a>
+</div>
+<!-- Desktop Nav -->
+<nav id="mainNav" class="hidden md:flex items-center gap-8">
+<a class="text-sm font-bold uppercase hover:text-primary transition-colors" href="Index.html">Home</a>
+<a class="text-sm font-bold uppercase hover:text-primary transition-colors" href="Shop.html">Shop</a>
+<a class="text-sm font-bold uppercase hover:text-primary transition-colors" href="About.html">About Us</a>
+</nav>
+<!-- Actions -->
+<div class="flex items-center gap-3">
+<button aria-label="Search" class="p-2 hover:bg-black/5 dark:hover:bg-white/10 rounded-full transition-colors">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button id="themeToggle" aria-label="Toggle dark mode" class="p-2 hover:bg-black/5 dark:hover:bg-white/10 rounded-full transition-colors">
+<span class="material-symbols-outlined">dark_mode</span>
+</button>
+<a href="Profile.html" aria-label="Account" class="p-2 hover:bg-black/5 dark:hover:bg-white/10 rounded-full transition-colors hidden sm:block">
+<button aria-label="Account" class="p-2 hover:bg-black/5 dark:hover:bg-white/10 rounded-full transition-colors hidden sm:block">
+<span class="material-symbols-outlined">person</span>
+</button>
+<a href="Cart.html" aria-label="Shopping Cart" class="relative p-2 hover:bg-black/5 dark:hover:bg-white/10 rounded-full transition-colors">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="cart-badge absolute top-1 right-1 size-2 bg-primary rounded-full hidden"></span>
+</a>
+<!-- Mobile Menu Button -->
+<button id="menuToggle" aria-label="Open menu" class="md:hidden p-2 hover:bg-black/5 dark:hover:bg-white/10 rounded-full transition-colors">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="bg-neutral-900"></main>
+<!-- Newsletter & Footer -->
+<footer class="bg-[#181111] text-white pt-20 pb-10 px-4 md:px-10 mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10 border-b border-gray-800 pb-16">
+<!-- Brand Column -->
+<div class="md:col-span-4 space-y-6">
+<h2 class="text-3xl font-bold tracking-tight uppercase">CALICO</h2>
+<p class="text-gray-400 max-w-xs">
+                        Defining the intersection of urban street culture and global fashion. Stay bold.
+                    </p>
+<div class="flex gap-4">
+<a aria-label="Instagram" class="size-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="font-bold text-xs">IG</span>
+</a>
+<a aria-label="TikTok" class="size-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="font-bold text-xs">TT</span>
+</a>
+<a aria-label="YouTube" class="size-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<span class="font-bold text-xs">YT</span>
+</a>
+</div>
+</div>
+<!-- Links Column 1 -->
+<div class="md:col-span-2">
+<h4 class="font-bold uppercase mb-6 text-gray-200">Shop</h4>
+<ul class="space-y-4 text-gray-400 text-sm">
+<li><a class="hover:text-white transition-colors" href="Newarrivals.html">New Arrivals</a></li>
+<li><a class="hover:text-white transition-colors" href="Bestsellers.html">Best Sellers</a></li>
+<li><a class="hover:text-white transition-colors" href="Apparel.html">Apparel</a></li>
+<li><a class="hover:text-white transition-colors" href="accessories.html">Accessories</a></li>
+</ul>
+</div>
+<!-- Links Column 2 -->
+<div class="md:col-span-2">
+<h4 class="font-bold uppercase mb-6 text-gray-200">Support</h4>
+<ul class="space-y-4 text-gray-400 text-sm">
+<li><a class="hover:text-white transition-colors" href="faq.html">FAQ</a></li>
+<li><a class="hover:text-white transition-colors" href="shippingreturns.html">Shipping &amp; Returns</a></li>
+<li><a class="hover:text-white transition-colors" href="sizeguides.html">Size Guide</a></li>
+<li><a class="hover:text-white transition-colors" href="contact.html">Contact Us</a></li>
+</ul>
+</div>
+<!-- Newsletter Column -->
+<div class="md:col-span-4">
+<h4 class="font-bold uppercase mb-6 text-gray-200">Join the LUV Club</h4>
+<p class="text-gray-400 text-sm mb-4">Get 10% off your first order and exclusive access to drops.</p>
+<form class="flex flex-col gap-3">
+<input class="w-full bg-gray-800 border-none rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-primary placeholder-gray-500" placeholder="Enter your email" type="email"/>
+<button class="w-full bg-white text-black font-bold uppercase rounded-lg px-4 py-3 hover:bg-primary hover:text-white transition-colors" type="button">
+                            Subscribe
+                        </button>
+</form>
+</div>
+</div>
+<div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+<p>© 2024 CALICO SEOUL. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-white transition-colors" href="privacypolicy.html">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="termsofservice.html">Terms of Service</a>
+</div>
+</div>
+</footer>
+</div>
+<script src="app.js"></script>
+<script>
+(function(){
+  const menuToggle = document.getElementById('menuToggle');
+  const mainNav = document.getElementById('mainNav');
+  if (menuToggle && mainNav && !menuToggle.dataset.bound) {
+    menuToggle.addEventListener('click', () => mainNav.classList.toggle('hidden'));
+    menuToggle.dataset.bound = '1';
+  }
+  const themeToggle = document.getElementById('themeToggle');
+  const root = document.documentElement;
+  function applyTheme(dark){ if(dark) root.classList.add('dark'); else root.classList.remove('dark'); localStorage.setItem('calicoTheme', dark ? 'dark' : 'light'); }
+  const stored = localStorage.getItem('calicoTheme'); if(stored) applyTheme(stored === 'dark');
+  if(themeToggle && !themeToggle.dataset.bound){ themeToggle.addEventListener('click', ()=>{ const isDark = root.classList.toggle('dark'); localStorage.setItem('calicoTheme', isDark ? 'dark' : 'light'); }); themeToggle.dataset.bound = '1'; }
+  document.querySelectorAll('footer form').forEach(form=>{ const email = form.querySelector('input[type="email"]'); const btn = form.querySelector('button[type="button"], button[type="submit"]'); if(!email || !btn) return; if(btn.dataset.bound) return; btn.addEventListener('click', async (e)=>{ e.preventDefault(); const val = (email.value||'').trim(); const re = /^\S+@\S+\.\S+$/; if(!re.test(val)){ alert('Please enter a valid email'); email.focus(); return; } try{ await fetch('/subscribe', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({email: val})}); alert('Subscribed — thank you!'); email.value = ''; }catch(_){ alert('Subscribed (local) — no backend connected.'); email.value = ''; } }); btn.dataset.bound = '1'; });
+})();
+</script>
+</body></html>
